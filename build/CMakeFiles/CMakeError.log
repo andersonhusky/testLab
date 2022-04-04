@@ -1,0 +1,378 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_fc8ee/fast && /usr/bin/make  -f CMakeFiles/cmTC_fc8ee.dir/build.make CMakeFiles/cmTC_fc8ee.dir/build
+make[1]: 进入目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_fc8ee.dir/src.c.o
+/usr/bin/x86_64-linux-gnu-gcc-7 -DCMAKE_HAVE_LIBC_PTHREAD  -fPIC  -o CMakeFiles/cmTC_fc8ee.dir/src.c.o -c /media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_fc8ee
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc8ee.dir/link.txt --verbose=1
+/usr/bin/x86_64-linux-gnu-gcc-7 -fPIC  -rdynamic CMakeFiles/cmTC_fc8ee.dir/src.c.o -o cmTC_fc8ee 
+CMakeFiles/cmTC_fc8ee.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x3e)：对‘pthread_create’未定义的引用
+src.c:(.text+0x4a)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x56)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x67)：对‘pthread_join’未定义的引用
+src.c:(.text+0x7b)：对‘pthread_atfork’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_fc8ee.dir/build.make:98: recipe for target 'cmTC_fc8ee' failed
+make[1]: *** [cmTC_fc8ee] Error 1
+make[1]: 离开目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Makefile:127: recipe for target 'cmTC_fc8ee/fast' failed
+make: *** [cmTC_fc8ee/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_495a7/fast && /usr/bin/make  -f CMakeFiles/cmTC_495a7.dir/build.make CMakeFiles/cmTC_495a7.dir/build
+make[1]: 进入目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_495a7.dir/CheckFunctionExists.c.o
+/usr/bin/x86_64-linux-gnu-gcc-7   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_495a7.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_495a7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_495a7.dir/link.txt --verbose=1
+/usr/bin/x86_64-linux-gnu-gcc-7 -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_495a7.dir/CheckFunctionExists.c.o -o cmTC_495a7  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_495a7.dir/build.make:98: recipe for target 'cmTC_495a7' failed
+make[1]: *** [cmTC_495a7] Error 1
+make[1]: 离开目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Makefile:127: recipe for target 'cmTC_495a7/fast' failed
+make: *** [cmTC_495a7/fast] Error 2
+
+
+
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_df3db/fast && /usr/bin/make  -f CMakeFiles/cmTC_df3db.dir/build.make CMakeFiles/cmTC_df3db.dir/build
+make[1]: 进入目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_df3db.dir/CheckFunctionExists.c.o
+/usr/bin/x86_64-linux-gnu-gcc-7   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_df3db.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_df3db
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df3db.dir/link.txt --verbose=1
+/usr/bin/x86_64-linux-gnu-gcc-7  -DCHECK_FUNCTION_EXISTS=sgemm_ -rdynamic CMakeFiles/cmTC_df3db.dir/CheckFunctionExists.c.o -o cmTC_df3db 
+CMakeFiles/cmTC_df3db.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x10)：对‘sgemm_’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_df3db.dir/build.make:98: recipe for target 'cmTC_df3db' failed
+make[1]: *** [cmTC_df3db] Error 1
+make[1]: 离开目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Makefile:127: recipe for target 'cmTC_df3db/fast' failed
+make: *** [cmTC_df3db/fast] Error 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_02e76/fast && /usr/bin/make  -f CMakeFiles/cmTC_02e76.dir/build.make CMakeFiles/cmTC_02e76.dir/build
+make[1]: 进入目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_02e76.dir/CheckFunctionExists.c.o
+/usr/bin/x86_64-linux-gnu-gcc-7   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_02e76.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_02e76
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02e76.dir/link.txt --verbose=1
+/usr/bin/x86_64-linux-gnu-gcc-7  -DCHECK_FUNCTION_EXISTS=cheev_ -rdynamic CMakeFiles/cmTC_02e76.dir/CheckFunctionExists.c.o -o cmTC_02e76  /usr/lib/x86_64-linux-gnu/libblas.so /usr/lib/x86_64-linux-gnu/libf77blas.so /usr/lib/x86_64-linux-gnu/libatlas.so -lpthread -lm -ldl 
+CMakeFiles/cmTC_02e76.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x10)：对‘cheev_’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_02e76.dir/build.make:101: recipe for target 'cmTC_02e76' failed
+make[1]: *** [cmTC_02e76] Error 1
+make[1]: 离开目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Makefile:127: recipe for target 'cmTC_02e76/fast' failed
+make: *** [cmTC_02e76/fast] Error 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5ad9c/fast && /usr/bin/make  -f CMakeFiles/cmTC_5ad9c.dir/build.make CMakeFiles/cmTC_5ad9c.dir/build
+make[1]: 进入目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_5ad9c.dir/CheckFunctionExists.c.o
+/usr/bin/x86_64-linux-gnu-gcc-7   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_5ad9c.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5ad9c
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ad9c.dir/link.txt --verbose=1
+/usr/bin/x86_64-linux-gnu-gcc-7  -DCHECK_FUNCTION_EXISTS=cheev_ -rdynamic CMakeFiles/cmTC_5ad9c.dir/CheckFunctionExists.c.o -o cmTC_5ad9c  /usr/lib/x86_64-linux-gnu/liblapack.so /usr/lib/x86_64-linux-gnu/libblas.so /usr/lib/x86_64-linux-gnu/libf77blas.so /usr/lib/x86_64-linux-gnu/libatlas.so -fortranlibs 
+x86_64-linux-gnu-gcc-7: error: unrecognized command line option ‘-fortranlibs’; did you mean ‘-fltrans’?
+CMakeFiles/cmTC_5ad9c.dir/build.make:102: recipe for target 'cmTC_5ad9c' failed
+make[1]: *** [cmTC_5ad9c] Error 1
+make[1]: 离开目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Makefile:127: recipe for target 'cmTC_5ad9c/fast' failed
+make: *** [cmTC_5ad9c/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4ee17/fast && /usr/bin/make  -f CMakeFiles/cmTC_4ee17.dir/build.make CMakeFiles/cmTC_4ee17.dir/build
+make[1]: 进入目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4ee17.dir/src.c.o
+/usr/bin/x86_64-linux-gnu-gcc-7 -DCMAKE_HAVE_LIBC_PTHREAD  -fPIC  -o CMakeFiles/cmTC_4ee17.dir/src.c.o -c /media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_4ee17
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ee17.dir/link.txt --verbose=1
+/usr/bin/x86_64-linux-gnu-gcc-7 -fPIC  -rdynamic CMakeFiles/cmTC_4ee17.dir/src.c.o -o cmTC_4ee17 
+CMakeFiles/cmTC_4ee17.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x3e)：对‘pthread_create’未定义的引用
+src.c:(.text+0x4a)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x56)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x67)：对‘pthread_join’未定义的引用
+src.c:(.text+0x7b)：对‘pthread_atfork’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_4ee17.dir/build.make:98: recipe for target 'cmTC_4ee17' failed
+make[1]: *** [cmTC_4ee17] Error 1
+make[1]: 离开目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Makefile:127: recipe for target 'cmTC_4ee17/fast' failed
+make: *** [cmTC_4ee17/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_889b9/fast && /usr/bin/make  -f CMakeFiles/cmTC_889b9.dir/build.make CMakeFiles/cmTC_889b9.dir/build
+make[1]: 进入目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_889b9.dir/CheckFunctionExists.c.o
+/usr/bin/x86_64-linux-gnu-gcc-7   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_889b9.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_889b9
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_889b9.dir/link.txt --verbose=1
+/usr/bin/x86_64-linux-gnu-gcc-7 -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_889b9.dir/CheckFunctionExists.c.o -o cmTC_889b9  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_889b9.dir/build.make:98: recipe for target 'cmTC_889b9' failed
+make[1]: *** [cmTC_889b9] Error 1
+make[1]: 离开目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Makefile:127: recipe for target 'cmTC_889b9/fast' failed
+make: *** [cmTC_889b9/fast] Error 2
+
+
+
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c2665/fast && /usr/bin/make  -f CMakeFiles/cmTC_c2665.dir/build.make CMakeFiles/cmTC_c2665.dir/build
+make[1]: 进入目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c2665.dir/CheckFunctionExists.c.o
+/usr/bin/x86_64-linux-gnu-gcc-7   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_c2665.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c2665
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2665.dir/link.txt --verbose=1
+/usr/bin/x86_64-linux-gnu-gcc-7  -DCHECK_FUNCTION_EXISTS=sgemm_ -rdynamic CMakeFiles/cmTC_c2665.dir/CheckFunctionExists.c.o -o cmTC_c2665 
+CMakeFiles/cmTC_c2665.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x10)：对‘sgemm_’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c2665.dir/build.make:98: recipe for target 'cmTC_c2665' failed
+make[1]: *** [cmTC_c2665] Error 1
+make[1]: 离开目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Makefile:127: recipe for target 'cmTC_c2665/fast' failed
+make: *** [cmTC_c2665/fast] Error 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f7488/fast && /usr/bin/make  -f CMakeFiles/cmTC_f7488.dir/build.make CMakeFiles/cmTC_f7488.dir/build
+make[1]: 进入目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_f7488.dir/CheckFunctionExists.c.o
+/usr/bin/x86_64-linux-gnu-gcc-7   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_f7488.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f7488
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7488.dir/link.txt --verbose=1
+/usr/bin/x86_64-linux-gnu-gcc-7  -DCHECK_FUNCTION_EXISTS=cheev_ -rdynamic CMakeFiles/cmTC_f7488.dir/CheckFunctionExists.c.o -o cmTC_f7488  /usr/lib/x86_64-linux-gnu/libblas.so /usr/lib/x86_64-linux-gnu/libf77blas.so /usr/lib/x86_64-linux-gnu/libatlas.so -lpthread -lm -ldl 
+CMakeFiles/cmTC_f7488.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x10)：对‘cheev_’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f7488.dir/build.make:101: recipe for target 'cmTC_f7488' failed
+make[1]: *** [cmTC_f7488] Error 1
+make[1]: 离开目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Makefile:127: recipe for target 'cmTC_f7488/fast' failed
+make: *** [cmTC_f7488/fast] Error 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1a648/fast && /usr/bin/make  -f CMakeFiles/cmTC_1a648.dir/build.make CMakeFiles/cmTC_1a648.dir/build
+make[1]: 进入目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_1a648.dir/CheckFunctionExists.c.o
+/usr/bin/x86_64-linux-gnu-gcc-7   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_1a648.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1a648
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a648.dir/link.txt --verbose=1
+/usr/bin/x86_64-linux-gnu-gcc-7  -DCHECK_FUNCTION_EXISTS=cheev_ -rdynamic CMakeFiles/cmTC_1a648.dir/CheckFunctionExists.c.o -o cmTC_1a648  /usr/lib/x86_64-linux-gnu/liblapack.so /usr/lib/x86_64-linux-gnu/libblas.so /usr/lib/x86_64-linux-gnu/libf77blas.so /usr/lib/x86_64-linux-gnu/libatlas.so -fortranlibs 
+x86_64-linux-gnu-gcc-7: error: unrecognized command line option ‘-fortranlibs’; did you mean ‘-fltrans’?
+CMakeFiles/cmTC_1a648.dir/build.make:102: recipe for target 'cmTC_1a648' failed
+make[1]: *** [cmTC_1a648] Error 1
+make[1]: 离开目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Makefile:127: recipe for target 'cmTC_1a648/fast' failed
+make: *** [cmTC_1a648/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ecaaf/fast && /usr/bin/make  -f CMakeFiles/cmTC_ecaaf.dir/build.make CMakeFiles/cmTC_ecaaf.dir/build
+make[1]: 进入目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_ecaaf.dir/src.c.o
+/usr/bin/x86_64-linux-gnu-gcc-7 -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_ecaaf.dir/src.c.o -c /media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ecaaf
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecaaf.dir/link.txt --verbose=1
+/usr/bin/x86_64-linux-gnu-gcc-7 -rdynamic CMakeFiles/cmTC_ecaaf.dir/src.c.o -o cmTC_ecaaf 
+CMakeFiles/cmTC_ecaaf.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x3e)：对‘pthread_create’未定义的引用
+src.c:(.text+0x4a)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x56)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x67)：对‘pthread_join’未定义的引用
+src.c:(.text+0x7b)：对‘pthread_atfork’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ecaaf.dir/build.make:98: recipe for target 'cmTC_ecaaf' failed
+make[1]: *** [cmTC_ecaaf] Error 1
+make[1]: 离开目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Makefile:127: recipe for target 'cmTC_ecaaf/fast' failed
+make: *** [cmTC_ecaaf/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d4e5d/fast && /usr/bin/make  -f CMakeFiles/cmTC_d4e5d.dir/build.make CMakeFiles/cmTC_d4e5d.dir/build
+make[1]: 进入目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_d4e5d.dir/CheckFunctionExists.c.o
+/usr/bin/x86_64-linux-gnu-gcc-7   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_d4e5d.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d4e5d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4e5d.dir/link.txt --verbose=1
+/usr/bin/x86_64-linux-gnu-gcc-7  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_d4e5d.dir/CheckFunctionExists.c.o -o cmTC_d4e5d  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d4e5d.dir/build.make:98: recipe for target 'cmTC_d4e5d' failed
+make[1]: *** [cmTC_d4e5d] Error 1
+make[1]: 离开目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Makefile:127: recipe for target 'cmTC_d4e5d/fast' failed
+make: *** [cmTC_d4e5d/fast] Error 2
+
+
+
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5bdeb/fast && /usr/bin/make  -f CMakeFiles/cmTC_5bdeb.dir/build.make CMakeFiles/cmTC_5bdeb.dir/build
+make[1]: 进入目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_5bdeb.dir/CheckFunctionExists.c.o
+/usr/bin/x86_64-linux-gnu-gcc-7   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_5bdeb.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5bdeb
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bdeb.dir/link.txt --verbose=1
+/usr/bin/x86_64-linux-gnu-gcc-7  -DCHECK_FUNCTION_EXISTS=sgemm_ -rdynamic CMakeFiles/cmTC_5bdeb.dir/CheckFunctionExists.c.o -o cmTC_5bdeb 
+CMakeFiles/cmTC_5bdeb.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x10)：对‘sgemm_’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_5bdeb.dir/build.make:98: recipe for target 'cmTC_5bdeb' failed
+make[1]: *** [cmTC_5bdeb] Error 1
+make[1]: 离开目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Makefile:127: recipe for target 'cmTC_5bdeb/fast' failed
+make: *** [cmTC_5bdeb/fast] Error 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_89d92/fast && /usr/bin/make  -f CMakeFiles/cmTC_89d92.dir/build.make CMakeFiles/cmTC_89d92.dir/build
+make[1]: 进入目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_89d92.dir/CheckFunctionExists.c.o
+/usr/bin/x86_64-linux-gnu-gcc-7   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_89d92.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_89d92
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89d92.dir/link.txt --verbose=1
+/usr/bin/x86_64-linux-gnu-gcc-7  -DCHECK_FUNCTION_EXISTS=cheev_ -rdynamic CMakeFiles/cmTC_89d92.dir/CheckFunctionExists.c.o -o cmTC_89d92  /usr/lib/x86_64-linux-gnu/libblas.so /usr/lib/x86_64-linux-gnu/libf77blas.so /usr/lib/x86_64-linux-gnu/libatlas.so -lpthread -lm -ldl 
+CMakeFiles/cmTC_89d92.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x10)：对‘cheev_’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_89d92.dir/build.make:101: recipe for target 'cmTC_89d92' failed
+make[1]: *** [cmTC_89d92] Error 1
+make[1]: 离开目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Makefile:127: recipe for target 'cmTC_89d92/fast' failed
+make: *** [cmTC_89d92/fast] Error 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d4e91/fast && /usr/bin/make  -f CMakeFiles/cmTC_d4e91.dir/build.make CMakeFiles/cmTC_d4e91.dir/build
+make[1]: 进入目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_d4e91.dir/CheckFunctionExists.c.o
+/usr/bin/x86_64-linux-gnu-gcc-7   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_d4e91.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d4e91
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4e91.dir/link.txt --verbose=1
+/usr/bin/x86_64-linux-gnu-gcc-7  -DCHECK_FUNCTION_EXISTS=cheev_ -rdynamic CMakeFiles/cmTC_d4e91.dir/CheckFunctionExists.c.o -o cmTC_d4e91  /usr/lib/x86_64-linux-gnu/liblapack.so /usr/lib/x86_64-linux-gnu/libblas.so /usr/lib/x86_64-linux-gnu/libf77blas.so /usr/lib/x86_64-linux-gnu/libatlas.so -fortranlibs 
+x86_64-linux-gnu-gcc-7: error: unrecognized command line option ‘-fortranlibs’; did you mean ‘-fltrans’?
+CMakeFiles/cmTC_d4e91.dir/build.make:102: recipe for target 'cmTC_d4e91' failed
+make[1]: *** [cmTC_d4e91] Error 1
+make[1]: 离开目录“/media/hongfeng/Storage/Code/test/build/CMakeFiles/CMakeTmp”
+Makefile:127: recipe for target 'cmTC_d4e91/fast' failed
+make: *** [cmTC_d4e91/fast] Error 2
+
+
+

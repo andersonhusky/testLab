@@ -322,110 +322,62 @@ CMakeFiles/Pythontest.dir/Cpython/test_python.cpp.o: \
  /media/hongfeng/Storage/Code/ADynaSLAM/Thirdparty/opencv-4.5.1/modules/video/include/opencv2/video.hpp \
  /media/hongfeng/Storage/Code/ADynaSLAM/Thirdparty/opencv-4.5.1/modules/video/include/opencv2/video/tracking.hpp \
  /media/hongfeng/Storage/Code/ADynaSLAM/Thirdparty/opencv-4.5.1/modules/video/include/opencv2/video/background_segm.hpp \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/Python.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/patchlevel.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pyconfig.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pymacconfig.h \
- /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/python3.6m/Python.h /usr/include/python3.6m/patchlevel.h \
+ /usr/include/python3.6m/pyconfig.h \
+ /usr/include/x86_64-linux-gnu/python3.6m/pyconfig.h \
+ /usr/include/python3.6m/pymacconfig.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd.h /usr/include/crypt.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pyport.h \
- /usr/include/inttypes.h /usr/include/x86_64-linux-gnu/sys/time.h \
+ /usr/include/python3.6m/pyport.h /usr/include/inttypes.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h \
  /usr/include/x86_64-linux-gnu/sys/stat.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/exports.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pymacro.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pymath.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pytime.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/object.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/object.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pymem.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/pymem.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/objimpl.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/objimpl.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/typeslots.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pyhash.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pydebug.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/bytearrayobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/bytearrayobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/bytesobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/bytesobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/unicodeobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/unicodeobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/longobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/longintrepr.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/boolobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/floatobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/complexobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/rangeobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/memoryobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/tupleobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/tupleobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/listobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/listobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/dictobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/dictobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/odictobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/enumobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/setobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/methodobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/methodobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/moduleobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/funcobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/classobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/fileobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/fileobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pycapsule.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/code.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/code.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pyframe.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/traceback.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/traceback.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/sliceobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cellobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/iterobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/genobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pystate.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/pystate.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/initconfig.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/descrobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/genericaliasobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/warnings.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/weakrefobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/structseq.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/namespaceobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/picklebufobject.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/codecs.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pyerrors.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/pyerrors.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/initconfig.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pythread.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/context.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pyarena.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/modsupport.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/compile.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pythonrun.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pylifecycle.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/pylifecycle.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/ceval.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/ceval.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/sysmodule.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/sysmodule.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/osmodule.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/intrcheck.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/import.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/import.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/abstract.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/abstract.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/bltinmodule.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/eval.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pyctype.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pystrtod.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pystrcmp.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/fileutils.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/cpython/fileutils.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/pyfpe.h \
- /media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9/tracemalloc.h
+ /usr/include/python3.6m/pymacro.h /usr/include/python3.6m/pyatomic.h \
+ /usr/include/python3.6m/pymath.h /usr/include/python3.6m/pytime.h \
+ /usr/include/python3.6m/object.h /usr/include/python3.6m/pymem.h \
+ /usr/include/python3.6m/objimpl.h /usr/include/python3.6m/typeslots.h \
+ /usr/include/python3.6m/pyhash.h /usr/include/python3.6m/pydebug.h \
+ /usr/include/python3.6m/bytearrayobject.h \
+ /usr/include/python3.6m/bytesobject.h \
+ /usr/include/python3.6m/unicodeobject.h \
+ /usr/include/python3.6m/longobject.h \
+ /usr/include/python3.6m/longintrepr.h \
+ /usr/include/python3.6m/boolobject.h \
+ /usr/include/python3.6m/floatobject.h \
+ /usr/include/python3.6m/complexobject.h \
+ /usr/include/python3.6m/rangeobject.h \
+ /usr/include/python3.6m/memoryobject.h \
+ /usr/include/python3.6m/tupleobject.h \
+ /usr/include/python3.6m/listobject.h \
+ /usr/include/python3.6m/dictobject.h \
+ /usr/include/python3.6m/odictobject.h \
+ /usr/include/python3.6m/enumobject.h /usr/include/python3.6m/setobject.h \
+ /usr/include/python3.6m/methodobject.h \
+ /usr/include/python3.6m/moduleobject.h \
+ /usr/include/python3.6m/funcobject.h \
+ /usr/include/python3.6m/classobject.h \
+ /usr/include/python3.6m/fileobject.h /usr/include/python3.6m/pycapsule.h \
+ /usr/include/python3.6m/traceback.h /usr/include/python3.6m/pystate.h \
+ /usr/include/python3.6m/sliceobject.h \
+ /usr/include/python3.6m/cellobject.h \
+ /usr/include/python3.6m/iterobject.h /usr/include/python3.6m/genobject.h \
+ /usr/include/python3.6m/descrobject.h /usr/include/python3.6m/warnings.h \
+ /usr/include/python3.6m/weakrefobject.h \
+ /usr/include/python3.6m/structseq.h \
+ /usr/include/python3.6m/namespaceobject.h \
+ /usr/include/python3.6m/codecs.h /usr/include/python3.6m/pyerrors.h \
+ /usr/include/python3.6m/pyarena.h /usr/include/python3.6m/modsupport.h \
+ /usr/include/python3.6m/pythonrun.h \
+ /usr/include/python3.6m/pylifecycle.h /usr/include/python3.6m/ceval.h \
+ /usr/include/python3.6m/sysmodule.h /usr/include/python3.6m/osmodule.h \
+ /usr/include/python3.6m/intrcheck.h /usr/include/python3.6m/import.h \
+ /usr/include/python3.6m/abstract.h /usr/include/python3.6m/bltinmodule.h \
+ /usr/include/python3.6m/compile.h /usr/include/python3.6m/code.h \
+ /usr/include/python3.6m/eval.h /usr/include/python3.6m/pyctype.h \
+ /usr/include/python3.6m/pystrtod.h /usr/include/python3.6m/pystrcmp.h \
+ /usr/include/python3.6m/dtoa.h /usr/include/python3.6m/fileutils.h \
+ /usr/include/python3.6m/pyfpe.h

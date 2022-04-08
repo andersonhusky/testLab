@@ -540,6 +540,9 @@ P_DIR:PATH=P_DIR-NOTFOUND
 //The directory containing a CMake configuration file for Pangolin.
 Pangolin_DIR:PATH=/usr/local/lib/cmake/Pangolin
 
+//The directory containing a CMake configuration file for Python3.6.
+Python3.6_DIR:PATH=Python3.6_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for PythonL.
 PythonL_DIR:PATH=PythonL_DIR-NOTFOUND
 
@@ -1158,15 +1161,15 @@ _Python2_INTERPRETER_PROPERTIES:INTERNAL=Python;2;7;17;64;;;/usr/lib/python2.7;/
 _Python2_INTERPRETER_SIGNATURE:INTERNAL=a5f7e88a475c254171e2d5112b165a37
 //Path to a library.
 _Python2_LIBRARY_RELEASE:INTERNAL=/usr/lib/x86_64-linux-gnu/libpython2.7.so
-_Python3_DEVELOPMENT_EMBED_SIGNATURE:INTERNAL=68dcbd091d165d863b28f421620f3d0e
-_Python3_DEVELOPMENT_MODULE_SIGNATURE:INTERNAL=0690880467b1497bb67a0b48d4a574a1
+_Python3_DEVELOPMENT_EMBED_SIGNATURE:INTERNAL=2b15b46babe7cf0e336d86f555df6c68
+_Python3_DEVELOPMENT_MODULE_SIGNATURE:INTERNAL=c37b8c5ce0691b248801647e6d661140
 //Path to a program.
 _Python3_EXECUTABLE:INTERNAL=/media/hongfeng/Storage/Ubuntu/anaconda3/bin/python3.9
 //Path to a file.
 _Python3_INCLUDE_DIR:INTERNAL=/media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9
 //Python3 Properties
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;9;7;64;;cpython-39-x86_64-linux-gnu;/media/hongfeng/Storage/Ubuntu/anaconda3/lib/python3.9;/media/hongfeng/Storage/Ubuntu/anaconda3/lib/python3.9;/media/hongfeng/Storage/Ubuntu/anaconda3/lib/python3.9/site-packages;/media/hongfeng/Storage/Ubuntu/anaconda3/lib/python3.9/site-packages
-_Python3_INTERPRETER_SIGNATURE:INTERNAL=bf81a3722a378a54009503d2a2bffca9
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=84a2ff19b4a49e952ae1087215189970
 //Path to a library.
 _Python3_LIBRARY_RELEASE:INTERNAL=/media/hongfeng/Storage/Ubuntu/anaconda3/lib/libpython3.9.so
 //Path to a program.

@@ -28,7 +28,7 @@
 /media/hongfeng/Storage/Code/test/build/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
 /media/hongfeng/Storage/Code/test/build/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
 /media/hongfeng/Storage/Code/test/build/CMakeFiles/geometry_msgs_generate_messages_py.dir
-/media/hongfeng/Storage/Code/test/build/CMakeFiles/Pythontest.dir
+/media/hongfeng/Storage/Code/test/build/CMakeFiles/asd.dir
 /media/hongfeng/Storage/Code/test/build/CMakeFiles/test.dir
 /media/hongfeng/Storage/Code/test/build/CMakeFiles/edit_cache.dir
 /media/hongfeng/Storage/Code/test/build/CMakeFiles/rebuild_cache.dir

@@ -3214,6 +3214,18 @@
 			"value" : "/usr/local/lib/cmake/Pangolin"
 		},
 		{
+			"name" : "Python3.6_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Python3.6."
+				}
+			],
+			"type" : "PATH",
+			"value" : "Python3.6_DIR-NOTFOUND"
+		},
+		{
 			"name" : "PythonL_DIR",
 			"properties" : 
 			[
@@ -3651,7 +3663,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "68dcbd091d165d863b28f421620f3d0e"
+			"value" : "2b15b46babe7cf0e336d86f555df6c68"
 		},
 		{
 			"name" : "_Python3_DEVELOPMENT_MODULE_SIGNATURE",
@@ -3663,7 +3675,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "0690880467b1497bb67a0b48d4a574a1"
+			"value" : "c37b8c5ce0691b248801647e6d661140"
 		},
 		{
 			"name" : "_Python3_EXECUTABLE",
@@ -3711,7 +3723,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "bf81a3722a378a54009503d2a2bffca9"
+			"value" : "84a2ff19b4a49e952ae1087215189970"
 		},
 		{
 			"name" : "_Python3_LIBRARY_RELEASE",

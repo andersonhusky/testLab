@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Pythontest"
+			"path" : "asd"
 		}
 	],
 	"backtrace" : 1,
@@ -50,7 +50,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 42,
+				"line" : 46,
 				"parent" : 0
 			},
 			{
@@ -72,7 +72,7 @@
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 45,
+				"line" : 49,
 				"parent" : 0
 			},
 			{
@@ -282,7 +282,7 @@
 			{
 				"command" : 11,
 				"file" : 0,
-				"line" : 34,
+				"line" : 38,
 				"parent" : 0
 			}
 		]
@@ -323,7 +323,7 @@
 			[
 				{
 					"backtrace" : 44,
-					"path" : "/media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9"
+					"path" : "/usr/include/python3.6m"
 				},
 				{
 					"backtrace" : 44,
@@ -702,7 +702,7 @@
 			]
 		}
 	],
-	"id" : "Pythontest::@6890427a1f51a3e7e1df",
+	"id" : "asd::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -721,7 +721,7 @@
 				"role" : "libraryPath"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/usr/local/cuda/lib64:/media/hongfeng/Storage/Code/ADynaSLAM/Thirdparty/opencv-4.5.1/build/lib:/usr/local/lib:/media/hongfeng/Storage/Ubuntu/anaconda3/lib",
+				"fragment" : "-Wl,-rpath,/usr/local/cuda/lib64:/media/hongfeng/Storage/Code/ADynaSLAM/Thirdparty/opencv-4.5.1/build/lib:/usr/local/lib:/usr/lib/python3.6/config-3.6m-x86_64-linux-gnu",
 				"role" : "libraries"
 			},
 			{
@@ -941,7 +941,7 @@
 			},
 			{
 				"backtrace" : 5,
-				"fragment" : "/media/hongfeng/Storage/Ubuntu/anaconda3/lib/libpython3.9.so",
+				"fragment" : "/usr/lib/python3.6/config-3.6m-x86_64-linux-gnu/libpython3.6.so",
 				"role" : "libraries"
 			},
 			{
@@ -1333,8 +1333,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Pythontest",
-	"nameOnDisk" : "Pythontest",
+	"name" : "asd",
+	"nameOnDisk" : "asd",
 	"paths" : 
 	{
 		"build" : ".",
@@ -1355,7 +1355,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Cpython/test_python.cpp",
+			"path" : "HowToGetInput/KnLines_dot.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

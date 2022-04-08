@@ -69,28 +69,28 @@ include CMakeFiles/Pythontest.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Pythontest.dir/flags.make
 
-CMakeFiles/Pythontest.dir/Cpython/test_python.cpp.o: CMakeFiles/Pythontest.dir/flags.make
-CMakeFiles/Pythontest.dir/Cpython/test_python.cpp.o: ../Cpython/test_python.cpp
-CMakeFiles/Pythontest.dir/Cpython/test_python.cpp.o: CMakeFiles/Pythontest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/hongfeng/Storage/Code/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Pythontest.dir/Cpython/test_python.cpp.o"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pythontest.dir/Cpython/test_python.cpp.o -MF CMakeFiles/Pythontest.dir/Cpython/test_python.cpp.o.d -o CMakeFiles/Pythontest.dir/Cpython/test_python.cpp.o -c /media/hongfeng/Storage/Code/test/Cpython/test_python.cpp
+CMakeFiles/Pythontest.dir/test.cpp.o: CMakeFiles/Pythontest.dir/flags.make
+CMakeFiles/Pythontest.dir/test.cpp.o: ../test.cpp
+CMakeFiles/Pythontest.dir/test.cpp.o: CMakeFiles/Pythontest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/hongfeng/Storage/Code/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Pythontest.dir/test.cpp.o"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pythontest.dir/test.cpp.o -MF CMakeFiles/Pythontest.dir/test.cpp.o.d -o CMakeFiles/Pythontest.dir/test.cpp.o -c /media/hongfeng/Storage/Code/test/test.cpp
 
-CMakeFiles/Pythontest.dir/Cpython/test_python.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pythontest.dir/Cpython/test_python.cpp.i"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/hongfeng/Storage/Code/test/Cpython/test_python.cpp > CMakeFiles/Pythontest.dir/Cpython/test_python.cpp.i
+CMakeFiles/Pythontest.dir/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pythontest.dir/test.cpp.i"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/hongfeng/Storage/Code/test/test.cpp > CMakeFiles/Pythontest.dir/test.cpp.i
 
-CMakeFiles/Pythontest.dir/Cpython/test_python.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pythontest.dir/Cpython/test_python.cpp.s"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/hongfeng/Storage/Code/test/Cpython/test_python.cpp -o CMakeFiles/Pythontest.dir/Cpython/test_python.cpp.s
+CMakeFiles/Pythontest.dir/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pythontest.dir/test.cpp.s"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/hongfeng/Storage/Code/test/test.cpp -o CMakeFiles/Pythontest.dir/test.cpp.s
 
 # Object files for target Pythontest
 Pythontest_OBJECTS = \
-"CMakeFiles/Pythontest.dir/Cpython/test_python.cpp.o"
+"CMakeFiles/Pythontest.dir/test.cpp.o"
 
 # External object files for target Pythontest
 Pythontest_EXTERNAL_OBJECTS =
 
-Pythontest: CMakeFiles/Pythontest.dir/Cpython/test_python.cpp.o
+Pythontest: CMakeFiles/Pythontest.dir/test.cpp.o
 Pythontest: CMakeFiles/Pythontest.dir/build.make
 Pythontest: /media/hongfeng/Storage/Code/ADynaSLAM/Thirdparty/opencv-4.5.1/build/lib/libopencv_gapi.so.4.5.1
 Pythontest: /media/hongfeng/Storage/Code/ADynaSLAM/Thirdparty/opencv-4.5.1/build/lib/libopencv_stitching.so.4.5.1
@@ -133,7 +133,7 @@ Pythontest: /media/hongfeng/Storage/Code/ADynaSLAM/Thirdparty/opencv-4.5.1/build
 Pythontest: /media/hongfeng/Storage/Code/ADynaSLAM/Thirdparty/opencv-4.5.1/build/lib/libopencv_xphoto.so.4.5.1
 Pythontest: /usr/local/lib/libpangolin.so
 Pythontest: /usr/local/lib/x86_64-linux-gnu/libceres.a
-Pythontest: /media/hongfeng/Storage/Ubuntu/anaconda3/lib/libpython3.9.so
+Pythontest: /usr/lib/python3.6/config-3.6m-x86_64-linux-gnu/libpython3.6.so
 Pythontest: /media/hongfeng/Storage/Code/ADynaSLAM/Thirdparty/opencv-4.5.1/build/lib/libopencv_shape.so.4.5.1
 Pythontest: /media/hongfeng/Storage/Code/ADynaSLAM/Thirdparty/opencv-4.5.1/build/lib/libopencv_highgui.so.4.5.1
 Pythontest: /media/hongfeng/Storage/Code/ADynaSLAM/Thirdparty/opencv-4.5.1/build/lib/libopencv_datasets.so.4.5.1

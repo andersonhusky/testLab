@@ -27,8 +27,12 @@ find_package(Ceres REQUIRED)
 message("ceres: " ${Ceres_INCLUDE_DIRS})
 
 # Python
-SET(Python3_ROOT_DIR "/media/hongfeng/Storage/Ubuntu/anaconda3/bin")
-find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
+# SET(Python3_ROOT_DIR "/media/hongfeng/Storage/Ubuntu/anaconda3/bin")
+SET(Python3_INCLUDE_DIRS "/usr/include/python3.6m")
+SET(Python3_LIBRARIES "/usr/lib/python3.6/config-3.6m-x86_64-linux-gnu/libpython3.6.so")
+# find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
+message("Python3: " ${Python3_INCLUDE_DIRS})
+message("Python3: " ${Python3_LIBRARIES})
 
 # G2O\EIGEN
 include_directories(${OpenCV_DIRS}
@@ -39,10 +43,10 @@ include_directories(${OpenCV_DIRS}
 		"/usr/include/eigen3")
 
 # ☂生成可执行文件
-add_executable( Pythontest Cpython/test_python.cpp)
+add_executable(asd HowToGetInput/KnLines_dot.cpp)
 
 # ④添加软连接
-target_link_libraries(Pythontest 
+target_link_libraries(asd
 ${OpenCV_LIBS} 
 g2o_core g2o_stuff 
 pangolin 

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/media/hongfeng/Storage/Code/test/test.cpp" "CMakeFiles/Pythontest.dir/test.cpp.o" "gcc" "CMakeFiles/Pythontest.dir/test.cpp.o.d"
+  "/media/hongfeng/Storage/Code/test/HowToGetInput/KnLines_dot.cpp" "CMakeFiles/asd.dir/HowToGetInput/KnLines_dot.cpp.o" "gcc" "CMakeFiles/asd.dir/HowToGetInput/KnLines_dot.cpp.o.d"
   )
 
 # Targets to which this target links.

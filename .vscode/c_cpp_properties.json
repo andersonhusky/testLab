@@ -3,9 +3,10 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**",
-                // "/usr/include/python2.7"
-                "/media/hongfeng/Storage/Ubuntu/anaconda3/include/python3.9"
+                "${default}",
+                "/usr/include",
+                "/usr/local/include",
+                "/opt/ros/melodic/include/**"
             ],
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "gnu11",

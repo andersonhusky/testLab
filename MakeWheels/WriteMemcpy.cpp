@@ -4,7 +4,7 @@
 // 手写memcpy函数
 using namespace std;
 
-void* memcpy(void* dest, void* src, size_t num){
+void* Memcpy(void* dest, void* src, size_t num){
     void* ret = dest;
     size_t i=0;
     assert(dest!=nullptr);
@@ -24,7 +24,7 @@ int main(){
     char strDest[20];
     cout << "Pleasr enter x" << endl;
     cin >> x;
-    memcpy(strDest, strSrc, x);
+    Memcpy(strDest, strSrc, x);
     strDest[x] = '\0';
     cout << "strDest: " << strDest << endl;
     return 0;

@@ -65,6 +65,7 @@ int main(int argc, const char * argv[])
 	cout << "pstr2:" << pstr2.GetCount() << " " << *pstr2 <<  endl;
 	cout << "pstr3:" << pstr3.GetCount() << " " << *pstr3 << endl;
 
+    cout << pstr3->size() << endl;
 
 	return 0;
 }

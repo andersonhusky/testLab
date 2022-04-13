@@ -43,7 +43,7 @@ include_directories(${OpenCV_DIRS}
 		"/usr/include/eigen3")
 
 # ☂生成可执行文件
-add_executable(asd DesignModel/Decorator/Decorator.cpp)
+add_executable(asd Rotation/RotmAndAngleaxis.cpp)
 
 # ④添加软连接
 target_link_libraries(asd

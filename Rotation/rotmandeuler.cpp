@@ -51,10 +51,6 @@ cv::Mat euler2rotm(const cv::Mat &euler){
     return res;
 }
 
-cv::Mat euler2rotm_(const cv::Mat &euler){
-    
-}
-
 int main(){
     cv::Mat euler(1, 3, CV_64FC1);
     cin >> euler.at<double>(0);

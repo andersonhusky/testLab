@@ -43,7 +43,7 @@ include_directories(${OpenCV_DIRS}
 		"/usr/include/eigen3")
 
 # ☂生成可执行文件
-add_executable(asd SortAlgorithm/MergeSort.cpp)
+add_executable(asd Thread/WithParams.cpp)
 
 # ④添加软连接
 target_link_libraries(asd
@@ -51,4 +51,5 @@ ${OpenCV_LIBS}
 g2o_core g2o_stuff 
 pangolin 
 ${CERES_LIBRARIES} 
-${Python3_LIBRARIES})
+${Python3_LIBRARIES}
+-lpthread -luuid)
